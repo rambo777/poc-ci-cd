@@ -3,6 +3,7 @@
   <groupId>poc</groupId>
   <artifactId>poc</artifactId>
   <packaging>war</packaging>
+	<version></version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
