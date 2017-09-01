@@ -34,7 +34,7 @@
 	<div class="container">
 		
 		<form class="form" name="loginForm" method="post" action="LoginServlet"  onsubmit="return validate()" >
-		<h1 style="padding-bottom:20px;">Welcome</h1>
+		<h1 style="padding-bottom:20px;">Welcome to CI-CD</h1>
 		<label>login ID</label>	<input type="text" name="userId" id="userId" value="ab12345" onclick="return userIdEmpty()">
 		<label>Password</label>	<input type="password"  name="password" id="password"  onclick="return passwordEmpty()"><br>
 			<button type="submit" class="login-button" id="loginBtn">Login</button>
