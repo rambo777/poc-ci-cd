@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>poc</groupId>
   <artifactId>poc</artifactId>
-  <version></version>
+  <version>ci-cd</version>
   <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
