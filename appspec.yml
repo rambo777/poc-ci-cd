@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-   - source: /poc/target/poc-ci-cid.war
+   - source: /poc/target/poc-ci-cd.war
      destination: /var/lib/tomcat8/webapps/
