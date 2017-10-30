@@ -20,7 +20,7 @@ public class PocDaoServicesImpl implements PocDaoServices {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");  
 			con=DriverManager.getConnection(  
-			"jdbc:mysql://dbii.ci01tzeksium.ap-south-1.rds.amazonaws.com:3306/pocdb","root","black517");  
+			"jdbc:mysql://dbii.cybpu5rsxwxk.us-west-2.rds.amazonaws.com:3306/pocdb","root","black517");  
 			System.out.println("connection build successfully");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
