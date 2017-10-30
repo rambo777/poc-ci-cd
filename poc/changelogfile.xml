@@ -45,10 +45,10 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.l
         <column name="password" value="ranjit22"/>
      </insert>
 </changeSet>
- <changeSet author="RanjitSingh" id="update-example">
+ <changeSet author="RanjitSingh" id="update1-example">
     <update tableName="userdetails">
         <column name="userId" value="ranjit121"/>
-        <where><column name="userId" value="ranjit11"/></where>
+        <where>userId="ranjit11"/></where>
     </update>
 </changeSet>
 </databaseChangeLog> 
