@@ -36,19 +36,19 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.l
 </changeSet>
   <changeSet author="RanjitSingh" id="4.0">
     <insert tableName="userdetails">
-        <column name="userId" value="ranjit12"/>
-        <column name="password" value="ranjit12"/>
+        <column name="userId" value="ranjit11"/>
+        <column name="password" value="ranjit11"/>
       
     </insert>
   <insert tableName="userdetails">
-        <column name="userId" value="ranjit21"/>
-        <column name="password" value="ranjit21"/>
+        <column name="userId" value="ranjit22"/>
+        <column name="password" value="ranjit22"/>
      </insert>
 </changeSet>
  <changeSet author="RanjitSingh" id="update-example">
     <update tableName="person">
         <column name="userId" value="ranjit121"/>
-        <where><column name="userId" value="ranjit12"/></where>
+        <where><column name="userId" value="ranjit11"/></where>
     </update>
 </changeSet>
 </databaseChangeLog> 
