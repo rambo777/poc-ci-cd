@@ -5,12 +5,14 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.l
  
 <changeSet author="minkowski" id="1.0">
 <createTable tableName="person">
-<column name="id" type="int">
-<constraints primaryKey="true" />
+<column name="id" type="int" autoIncrement="true">
+  <constraints primaryKey="true" nullable="false"/>
 </column>
-<column name="first_name" type="varchar(20)" />
-<column name="last_name" type="varchar(50)" />
-<column name="age" type="int" />
+<column name="firstname" type="varchar(50)"/>
+<column name="lastname" type="varchar(50)">
+  <constraints nullable="false"/>
+</column>
+<column name="state" type="char(2)"/>
 </createTable>
 <addAutoIncrement tableName="person" columnName="id" columnDataType="int" />
 <rollback>
