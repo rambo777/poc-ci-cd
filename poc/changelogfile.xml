@@ -45,9 +45,9 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.l
         <column name="password" value="ranjit22"/>
      </insert>
 </changeSet>
- <changeSet author="RanjitSingh" id="update3-example">
+ <changeSet author="RanjitSingh" id="update3-example" runOnChange="true">
     <update tableName="userdetails">
-        <column name="userId" value="ranjit1331" runOnChange="true"/>
+        <column name="userId" value="ranjit1331" />
         <where>password='ranjit11'</where>
     </update>
 </changeSet>
