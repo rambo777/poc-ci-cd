@@ -19,5 +19,22 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.l
 <dropTable tableName="person" />
 </rollback>
 </changeSet>
+<changeSet author="RanjitSingh" id="2.0">
+  <createTable tableName="userdetails">
+    <column name="userId" type="varchar(50)"/>
+    <column name="password" type="varchar(50)"/>
+  </createTable>
+  <rollback>
+    <dropTable tableName="userdetails" />
+  </rollback>
+</changeSet>
+ <changeSet author="RanjitSingh" id="insert-users">
+    <insert dbms="pocdb"
+            tableName="userdetails">
+        <column name="userId" value="ranjit"/>
+        <column name="password" value="ranjit"/>
+      
+    </insert>
+</changeSet>
  
 </databaseChangeLog> 
