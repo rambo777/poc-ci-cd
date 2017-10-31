@@ -71,18 +71,13 @@
             newDataType="varchar(255)"
             tableName="userdetails"/>
 </changeSet>
-  <changeSet author="RanjitSingh" id="createProcedure-example">
+  <changeSet author="RanjitSingh" id="createProcedure-example" runOnChange="true">
     <createProcedure dbms="mysql"
             encoding="utf8"
             relativeToChangelogFile="true"
+            path="procedure.sql"
             schemaName="public">
-       
-        DROP PROCEDURE IF EXISTS testHello;
-        CREATE PROCEDURE testHello()
-        BEGIN
-          SELECT 'Hello Worlds123123!!!!!!!!!!!!!!!!';
-        END
-       
+              
     </createProcedure>
 </changeSet>
  
