@@ -72,8 +72,7 @@
             tableName="userdetails"/>
 </changeSet>
   <changeSet author="RanjitSingh" id="createProcedure-example">
-    <createProcedure comments="first procedure"
-            dbms="mysql"
+    <createProcedure dbms="mysql"
             encoding="utf8"
             relativeToChangelogFile="true"
             schemaName="public">CREATE OR REPLACE PROCEDURE testHello
