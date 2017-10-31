@@ -75,7 +75,6 @@
     <createProcedure comments="first procedure"
             dbms="mysql"
             encoding="utf8"
-            procedureName="A String"
             relativeToChangelogFile="true"
             schemaName="public">CREATE OR REPLACE PROCEDURE testHello
     IS
