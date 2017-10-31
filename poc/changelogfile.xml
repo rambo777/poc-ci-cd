@@ -72,13 +72,13 @@
             tableName="userdetails"/>
 </changeSet>
   <changeSet author="RanjitSingh" id="createProcedure-example" runOnChange="true">
-    <createProcedure dbms="mysql"
+    <sqlFile dbms="mysql"
             encoding="utf8"
-            relativeToChangelogFile="true"
+            endDelimiter="//"
             path="procedure.sql"
-            schemaName="public">
-              
-    </createProcedure>
+            relativeToChangelogFile="true"
+            splitStatements="true"
+            stripComments="true"/>
 </changeSet>
  
 </databaseChangeLog> 
