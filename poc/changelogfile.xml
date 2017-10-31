@@ -68,7 +68,7 @@
 </changeSet>
  <changeSet author="RanjitSingh" id="modifyDataType-example" runOnChange="true">
     <modifyDataType columnName="firstName"
-            newDataType="int"
+            newDataType="varchar(255)"
             tableName="userdetails"/>
 </changeSet>
  
