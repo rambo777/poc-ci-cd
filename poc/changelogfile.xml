@@ -76,13 +76,14 @@
             encoding="utf8"
             relativeToChangelogFile="true"
             schemaName="public">
-    DELIMITER //
-DROP PROCEDURE IF EXISTS testHello;
- CREATE PROCEDURE testHello()
-    BEGIN
-      SELECT 'Hello Worlds123123!!!!!!!!!!!!!!!!';
-    END//
-DELIMITER ;</createProcedure>
+        DELIMITER //
+        DROP PROCEDURE IF EXISTS testHello;
+        CREATE PROCEDURE testHello()
+        BEGIN
+          SELECT 'Hello Worlds123123!!!!!!!!!!!!!!!!';
+        END//
+        DELIMITER ;
+    </createProcedure>
 </changeSet>
  
 </databaseChangeLog> 
