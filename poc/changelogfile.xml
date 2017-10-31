@@ -73,9 +73,10 @@
 </changeSet>
   <changeSet author="RanjitSingh" id="createProcedure-example" runOnChange="true">
     <sqlFile dbms="mysql"
-            endDelimiter="#"
-            path="procedure.sql"
-            stripComments="true"/>
+             relativeToChangelogFile="true"
+             endDelimiter="#"
+             path="procedure.sql"
+             stripComments="true"/>
 </changeSet>
  
 </databaseChangeLog> 
