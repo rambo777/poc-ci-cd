@@ -1,5 +1,7 @@
-DROP PROCEDURE IF EXISTS testHello;
- CREATE PROCEDURE testHello()
-    BEGIN
-      SELECT 'Hello Worlds!!!!!!!!!!!!!!!!1';
-    END//
+DROP PROCEDURE IF EXISTS sayHelloWorld;
+#
+CREATE PROCEDURE sayHelloWorld()
+BEGIN
+    SELECT 'Hello World From a MySql Database!';
+END
+#
