@@ -75,11 +75,14 @@
     <createProcedure dbms="mysql"
             encoding="utf8"
             relativeToChangelogFile="true"
-            schemaName="public">CREATE OR REPLACE PROCEDURE testHello
-    IS
+            schemaName="public">
+    DELIMITER //
+DROP PROCEDURE IF EXISTS testHello;
+ CREATE PROCEDURE testHello()
     BEGIN
-      DBMS_OUTPUT.PUT_LINE('Hello From The Database!');
-    END;</createProcedure>
+      SELECT 'Hello Worlds123123!!!!!!!!!!!!!!!!';
+    END//
+DELIMITER ;</createProcedure>
 </changeSet>
  
 </databaseChangeLog> 
