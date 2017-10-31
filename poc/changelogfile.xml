@@ -67,11 +67,9 @@
     </addColumn>
 </changeSet>
  <changeSet author="RanjitSingh" id="modifyDataType-example" runOnChange="true">
-    <modifyDataType catalogName="cat"
-            columnName="id"
+    <modifyDataType columnName="firstName"
             newDataType="int"
-            schemaName="public"
-            tableName="person"/>
+            tableName="userdetails"/>
 </changeSet>
  
 </databaseChangeLog> 
