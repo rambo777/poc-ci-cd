@@ -73,11 +73,9 @@
 </changeSet>
   <changeSet author="RanjitSingh" id="createProcedure-example" runOnChange="true">
     <sqlFile dbms="mysql"
-            encoding="utf8"
             endDelimiter="//"
             path="procedure.sql"
             relativeToChangelogFile="true"
-            splitStatements="true"
             stripComments="true"/>
 </changeSet>
  
