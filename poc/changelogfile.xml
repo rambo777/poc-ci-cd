@@ -71,5 +71,17 @@
             newDataType="varchar(255)"
             tableName="userdetails"/>
 </changeSet>
+  <changeSet author="RanjitSingh" id="createProcedure-example">
+    <createProcedure comments="first procedure"
+            dbms="mysql"
+            encoding="utf8"
+            procedureName="A String"
+            relativeToChangelogFile="true"
+            schemaName="public">CREATE OR REPLACE PROCEDURE testHello
+    IS
+    BEGIN
+      DBMS_OUTPUT.PUT_LINE('Hello From The Database!');
+    END;</createProcedure>
+</changeSet>
  
 </databaseChangeLog> 
