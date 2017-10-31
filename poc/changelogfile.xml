@@ -59,6 +59,10 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.l
     <delete tableName="userdetails">
         <where>password="ranjit22"</where>
     </delete>
-  
+</changeSet>
+<changeSet author="RanjitSingh" id="addColumn-example">
+    <addColumn tableName="userdetails">
+        <column name="firstName" type="varchar(255)"/>
+    </addColumn>
 </changeSet>
 </databaseChangeLog> 
