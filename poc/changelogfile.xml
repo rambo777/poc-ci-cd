@@ -66,9 +66,7 @@ xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.l
     </addColumn>
 </changeSet>
  <changeSet author="RanjitSingh" id="modifyDataType-example" runOnChange="true">
-    <modifyDataType 
-            columnName="firstName"
-            newDataType="int"
-            tableName="userdetails"/>
+    <modifyDataType columnName="firstName" newDataType="int" tableName="userdetails"/>
 </changeSet>
+ 
 </databaseChangeLog> 
