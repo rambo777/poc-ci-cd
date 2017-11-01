@@ -78,5 +78,7 @@
              path="procedure.sql"
              stripComments="true"/>
 </changeSet>
- 
+ <changeSet author="liquibase-docs" id="tagDatabase-example">
+    <tagDatabase tag="version_1"/>
+</changeSet>
 </databaseChangeLog> 
