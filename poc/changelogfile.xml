@@ -84,7 +84,7 @@
   <changeSet author="RanjitSingh" id="rollback-migration-test" runOnChange="true">
     <update tableName="userdetails">
         <column name="userId" value="roll1" />
-        <where>password='roll1'</where>
+        <where>password='ranjit11'</where>
     </update>
   <insert tableName="userdetails">
         <column name="userId" value="roll7"/>
