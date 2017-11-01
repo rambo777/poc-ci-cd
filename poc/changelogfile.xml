@@ -78,12 +78,12 @@
              path="procedure.sql"
              stripComments="true"/>
 </changeSet>
- <changeSet author="liquibase-docs" id="tagDatabase-example">
+ <changeSet author="liquibase-docs" id="tagDatabase-example2">
     <tagDatabase tag="version_1"/>
 </changeSet>
   <changeSet author="RanjitSingh" id="rollback-migration-test" runOnChange="true">
     <update tableName="userdetails">
-        <column name="userId" value="roll1" />
+        <column name="userId" value="roll2" />
         <where>password='ranjit11'</where>
     </update>
     <rollback>
