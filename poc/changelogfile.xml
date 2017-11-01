@@ -86,6 +86,12 @@
         <column name="userId" value="roll1" />
         <where>password='ranjit11'</where>
     </update>
+    <rollback>
+        <update tableName="userdetails">
+          <column name="userId" value="pooja" />
+        <where>password='ranjit11'</where>
+    </update>
+    </rollback>
   <insert tableName="userdetails">
         <column name="userId" value="roll7"/>
         <column name="password" value="roll7"/>
