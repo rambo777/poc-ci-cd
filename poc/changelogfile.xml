@@ -91,6 +91,9 @@
           <column name="userId" value="pooja" />
         <where>password='ranjit11'</where>
     </update>
+      <delete tableName="userdetails">
+        <where>password="roll7"</where>
+    </delete>
     </rollback>
   <insert tableName="userdetails">
         <column name="userId" value="roll7"/>
