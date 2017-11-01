@@ -81,4 +81,14 @@
  <changeSet author="liquibase-docs" id="tagDatabase-example">
     <tagDatabase tag="version_1"/>
 </changeSet>
+  <changeSet author="RanjitSingh" id="rollback-migration-test" runOnChange="true">
+    <update tableName="userdetails">
+        <column name="userId" value="roll1" />
+        <where>password='roll1'</where>
+    </update>
+  <insert tableName="userdetails">
+        <column name="userId" value="roll7"/>
+        <column name="password" value="roll7"/>
+     </insert>
+</changeSet>
 </databaseChangeLog> 
