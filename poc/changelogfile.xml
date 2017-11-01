@@ -52,8 +52,8 @@
         <where>password='ranjit11'</where>
     </update>
   <insert tableName="userdetails">
-        <column name="userId" value="ranjit22444444"/>
-        <column name="password" value="ranjit2212"/>
+        <column name="userId" value="rambo517"/>
+        <column name="password" value="rambo0517"/>
      </insert>
 </changeSet>
  <changeSet author="RanjitSingh" id="delete-row" runOnChange="true">
