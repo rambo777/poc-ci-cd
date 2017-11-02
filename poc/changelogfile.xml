@@ -100,6 +100,9 @@
         <column name="password" value="roll7"/>
      </insert>
 </changeSet>
+  <changeSet author="liquibase-docs" id="tagDatabase-example2">
+    <tagDatabase tag="version_1"/>
+</changeSet>
    <changeSet author="RanjitSingh" id="test-commit1">
      <insert tableName="userdetails">
         <column name="userId" value="rollThur1"/>
