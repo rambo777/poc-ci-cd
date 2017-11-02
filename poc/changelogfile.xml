@@ -115,4 +115,26 @@
         <column name="password" value="rollThur2"/>
      </insert>
 </changeSet>
+  <changeSet author="RanjitSingh" id="test-commit3">
+     <insert tableName="userdetails">
+        <column name="userId" value="rollThur3"/>
+        <column name="password" value="rollThur3"/>
+     </insert>
+    <rollback> 
+      <delete tableName="userdetails">
+          <where>password="rollThur3"</where>
+      </delete>
+    </rollback>
+</changeSet>
+   <changeSet author="RanjitSingh" id="test-commit4">
+     <insert tableName="userdetails">
+        <column name="userId" value="rollThur4"/>
+        <column name="password" value="rollThur4"/>
+     </insert>
+     <rollback>
+        <delete tableName="userdetails">
+           <where>password="rollThur4"</where>
+        </delete>
+     </rollback>
+</changeSet>
 </databaseChangeLog> 
