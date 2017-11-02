@@ -137,4 +137,9 @@
         </delete>
      </rollback>
 </changeSet>
+   <changeSet author="RanjitSingh" id="addColumn-example2">
+    <addColumn tableName="userdetails">
+        <column name="lastName" type="varchar(255)"/>
+    </addColumn>
+</changeSet>
 </databaseChangeLog> 
