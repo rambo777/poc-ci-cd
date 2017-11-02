@@ -100,4 +100,16 @@
         <column name="password" value="roll7"/>
      </insert>
 </changeSet>
+   <changeSet author="RanjitSingh" id="test-commit1">
+     <insert tableName="userdetails">
+        <column name="userId" value="rollThur1"/>
+        <column name="password" value="rollThur1"/>
+     </insert>
+</changeSet>
+  <changeSet author="RanjitSingh" id="test-commit2">
+     <insert tableName="userdetails">
+        <column name="userId" value="rollThur2"/>
+        <column name="password" value="rollThur2"/>
+     </insert>
+</changeSet>
 </databaseChangeLog> 
