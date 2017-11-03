@@ -153,8 +153,6 @@
             tableName="userdetails"/>
    </changeSet>
   
-  <changeSet author="liquibase-user11" id="tagDatabase11">
-    <tagDatabase tag="${dbVersion}"/>
-</changeSet>
+  
   
 </databaseChangeLog> 
