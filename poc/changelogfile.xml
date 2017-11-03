@@ -156,7 +156,7 @@
   
  <changeSet author="liquibase-docs" id="dropColumn2.2-example">
     <dropColumn 
-            columnName="phones"
+            columnName="phoneNumber"
             tableName="userdetails"/>
   </changeSet>
   <changeSet author="liquibase-docs" id="${dbVersion}" >
