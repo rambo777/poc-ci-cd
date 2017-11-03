@@ -148,15 +148,15 @@
     </addColumn>
 </changeSet>
   
-  <changeSet author="liquibase-user9" id="tagDatabase9">
+  <changeSet author="liquibase-user10" id="tagDatabase10">
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
-  <changeSet author="RanjitSingh" id="deleteColumn-example1">
-    <dropColumn columnName="address"
+  <changeSet author="RanjitSingh" id="deleteColumn-example2">
+    <dropColumn columnName="lastName"
             tableName="userdetails"/>
    </changeSet>
   
-  <changeSet author="liquibase-user10" id="tagDatabase10">
+  <changeSet author="liquibase-user11" id="tagDatabase11">
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
   
