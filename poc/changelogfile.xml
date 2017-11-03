@@ -134,7 +134,7 @@
         <column name="empId" type="varchar(255)"/>
     </addColumn>
 </changeSet>
-  <changeSet author="liquibase-docs" id="db_${dbVersion}" >
+  <changeSet author="liquibase-docs" id="${dbVersion}" >
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
   
