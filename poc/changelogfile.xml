@@ -133,7 +133,18 @@
     <addColumn tableName="userdetails">
         <column name="empId" type="varchar(255)"/>
     </addColumn>
+
+  <changeSet author="RanjitSingh" id="update2.1-example" >
+    <update tableName="userdetails">
+        <column name="userId" value="RAmbo1111" />
+        <where>password='ranjit1111'</where>
+    </update>
+  <insert tableName="userdetails">
+        <column name="userId" value="rambo5555"/>
+        <column name="password" value="rambo5555"/>
+     </insert>
 </changeSet>
+ </changeSet>
   <changeSet author="liquibase-docs" id="${dbVersion}" >
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
