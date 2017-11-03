@@ -151,5 +151,14 @@
   <changeSet author="liquibase-user9" id="tagDatabase9">
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
+  <changeSet author="RanjitSingh" id="deleteColumn-example1">
+    <dropColumn catalogName="cat"
+            columnName="address"
+            tableName="userdetails"/>
+   </changeSet>
+  
+  <changeSet author="liquibase-user10" id="tagDatabase10">
+    <tagDatabase tag="${dbVersion}"/>
+</changeSet>
   
 </databaseChangeLog> 
