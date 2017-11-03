@@ -122,11 +122,7 @@
     </addColumn>
 </changeSet>
     
-  <changeSet author="RanjitSingh" id="deleteColumn-example2">
-    <dropColumn columnName="lastName"
-            tableName="userdetails"/>
-   </changeSet>
-  
+ 
   
   
 </databaseChangeLog> 
