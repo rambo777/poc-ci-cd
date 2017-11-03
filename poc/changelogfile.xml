@@ -144,7 +144,7 @@
         <column name="password" value="rambo5555"/>
      </insert>
 </changeSet>
- </changeSet>
+ 
   <changeSet author="liquibase-docs" id="${dbVersion}" >
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
