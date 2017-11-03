@@ -147,10 +147,7 @@
         <column name="address" type="varchar(255)"/>
     </addColumn>
 </changeSet>
-  
-  <changeSet author="liquibase-user10" id="tagDatabase10">
-    <tagDatabase tag="${dbVersion}"/>
-</changeSet>
+    
   <changeSet author="RanjitSingh" id="deleteColumn-example2">
     <dropColumn columnName="lastName"
             tableName="userdetails"/>
