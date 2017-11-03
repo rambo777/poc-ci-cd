@@ -142,7 +142,14 @@
         <column name="lastName" type="varchar(255)"/>
     </addColumn>
 </changeSet>
-  <changeSet author="liquibase-user" id="tagDatabase8">
+  <changeSet author="RanjitSingh" id="addColumn-example3">
+    <addColumn tableName="userdetails">
+        <column name="address" type="varchar(255)"/>
+    </addColumn>
+</changeSet>
+  
+  <changeSet author="liquibase-user9" id="tagDatabase9">
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
+  
 </databaseChangeLog> 
