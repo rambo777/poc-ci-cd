@@ -144,7 +144,21 @@
         <column name="password" value="rambo5555"/>
      </insert>
 </changeSet>
- 
+ <changeSet author="liquibase-docs" id="dropColumn2.1-example">
+    <dropColumn 
+            columnName="empId"
+            tableName="userDetails"/>
+   <dropColumn 
+            columnName="address"
+            tableName="userDetails"/>
+   
+</changeSet>
+  
+ <changeSet author="liquibase-docs" id="dropColumn2.2-example">
+    <dropColumn 
+            columnName="phones"
+            tableName="userDetails"/>
+  </changeSet>
   <changeSet author="liquibase-docs" id="${dbVersion}" >
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
