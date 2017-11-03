@@ -121,8 +121,14 @@
         <column name="address" type="varchar(255)"/>
     </addColumn>
 </changeSet>
-    
- 
+     <changeSet author="RanjitSingh" id="addColumnphoneNumber">
+    <addColumn tableName="userdetails">
+        <column name="phoneNumber" type="varchar(255)"/>
+    </addColumn>
+</changeSet>
+  <changeSet author="liquibase-docs" id="tag4">
+    <tagDatabase tag="{dbVersion}"/>
+</changeSet>
   
   
 </databaseChangeLog> 
