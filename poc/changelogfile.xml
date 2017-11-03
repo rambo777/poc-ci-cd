@@ -129,6 +129,14 @@
   <changeSet author="liquibase-docs" id="tag4">
     <tagDatabase tag="{dbVersion}"/>
 </changeSet>
+  <changeSet author="RanjitSingh" id="addColumnEmpId">
+    <addColumn tableName="userdetails">
+        <column name="empId" type="varchar(255)"/>
+    </addColumn>
+</changeSet>
+  <changeSet author="liquibase-docs" id="tag5">
+    <tagDatabase tag="${dbVersion}"/>
+</changeSet>
   
   
 </databaseChangeLog> 
