@@ -147,10 +147,10 @@
  <changeSet author="liquibase-docs" id="dropColumn2.1-example">
     <dropColumn 
             columnName="empId"
-            tableName="userDetails"/>
+            tableName="userdetails"/>
    <dropColumn 
             columnName="address"
-            tableName="userDetails"/>
+            tableName="userdetails"/>
    
 </changeSet>
   
