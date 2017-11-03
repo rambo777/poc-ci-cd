@@ -152,8 +152,7 @@
     <tagDatabase tag="${dbVersion}"/>
 </changeSet>
   <changeSet author="RanjitSingh" id="deleteColumn-example1">
-    <dropColumn catalogName="cat"
-            columnName="address"
+    <dropColumn columnName="address"
             tableName="userdetails"/>
    </changeSet>
   
