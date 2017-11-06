@@ -165,8 +165,8 @@
         </createTable>
       
  </changeSet>
-  <changeSet id="rollback-reff" author="nvoxland">
-        <dropTable tableName="deptdetails"/>
+  <changeSet id="rollback-reff2" author="nvoxland">
+        
         <rollback changeSetId="create-Dept-Table" changeSetAuthor="nvoxland"/>
   </changeSet>  
    <changeSet author="liquibase-docs" id="${dbVersion}" >
