@@ -168,4 +168,5 @@
    
    <changeSet author="liquibase-docs" id="${dbVersion}" >
     <tagDatabase tag="${dbVersion}"/>
+  </changeSet>
 </databaseChangeLog> 
