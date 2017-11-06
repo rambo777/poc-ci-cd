@@ -9,13 +9,13 @@ BEGIN
 END
 #
 --changeset nvoxland:6 runOnChange:true
-SET autocommit=0;
+
 START TRANSACTION;
 create table employeerishi (empId int);
 create table addressdetails (empId int);
 create tables emp (empId int);
 COMMIT;
-SET autocommit=1;
+
 
 
 
