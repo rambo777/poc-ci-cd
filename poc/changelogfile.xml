@@ -163,9 +163,12 @@
         <createTable tableName="deptdetails">
             <column name="id" type="int"/>
         </createTable>
-      <rollback changeSetId="create-Dept-Table" changeSetAuthor="nvoxland"/>
-    </changeSet>
-   
+      
+ </changeSet>
+  <changeSet id="rollback-reff" author="nvoxland">
+        <dropTable tableName="deptdetails"/>
+        <rollback changeSetId="create-Dept-Table" changeSetAuthor="nvoxland"/>
+  </changeSet>  
    <changeSet author="liquibase-docs" id="${dbVersion}" >
     <tagDatabase tag="${dbVersion}"/>
   </changeSet>
