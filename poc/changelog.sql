@@ -11,7 +11,7 @@ END
 --changeset nvoxland:6 runOnChange:true
 create table employeerishi (empId int);
 create table addressdetails (empId int);
-create tabless emp (empId int);
+create table emp (empId int);
 --rollback drop table employeerishi,addressdetails;
 
 
