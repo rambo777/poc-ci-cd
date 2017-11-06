@@ -9,10 +9,14 @@ BEGIN
 END
 #
 --changeset nvoxland:6 runOnChange:true
-drop table employeerishi,addressdetails,emp; 
+SET autocommit=0;
+START TRANSACTION;
+create table employeerishi (empId int);
+create table addressdetails (empId int);
+create tables emp (empId int);
+COMMIT;
+SET autocommit=1;
 
 
---changeset nvoxland:4 runOnChange:true
-insert into employeerishi (empId) values (3);
-insert into employeerishii (empId) values (4);
+
 
