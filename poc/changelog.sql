@@ -12,9 +12,8 @@ BEGIN
     SELECT ' Hello :) Liquibase!';
 END
 #
---changeset nvoxland:5.1 runOnChange:true
---rollback drop table employeerishi,addressdetails;
 --changeset nvoxland:6 runOnChange:true
+drop table employeerishi,addressdetails;
 create table employeerishi (empId int);
 create table addressdetails (empId int);
 create tables emp (empId int);
