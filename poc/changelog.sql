@@ -13,7 +13,7 @@ BEGIN
 END
 #
 --changeset nvoxland:6 runOnChange:true
-
+--rollback drop table employeerishi,addressdetails;
 drop table employeerishi,addressdetails;
 create table employeerishi (empId int);
 create table addressdetails (empId int);
