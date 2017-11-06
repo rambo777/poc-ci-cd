@@ -159,15 +159,14 @@
             columnName="phoneNumber"
             tableName="userdetails"/>
   </changeSet>
-  <changeSet id="create-Dept-Table" author="nvoxland">
+  <changeSet id="create-Dept-Table3" author="nvoxland">
         <createTable tableName="deptdetails">
             <column name="id" type="int"/>
         </createTable>
       
  </changeSet>
-  <changeSet id="rollback-reff2" author="nvoxland">
-        
-        <rollback changeSetId="create-Dept-Table" changeSetAuthor="nvoxland"/>
+  <changeSet id="rollback-reff3" author="nvoxland">
+      <rollback changeSetId="create-Dept-Table3" changeSetAuthor="nvoxland"/>
   </changeSet>  
    <changeSet author="liquibase-docs" id="${dbVersion}" >
     <tagDatabase tag="${dbVersion}"/>
