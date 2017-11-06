@@ -9,7 +9,7 @@ BEGIN
 END
 #
 --changeset nvoxland:6 runOnChange:true
-drop table employeerishi,addressdetails,emp;
+drop table employeerishi,addressdetails,emp; 
 
 
 --changeset nvoxland:4 runOnChange:true
