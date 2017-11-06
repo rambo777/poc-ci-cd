@@ -9,12 +9,10 @@ BEGIN
 END
 #
 --changeset nvoxland:6 runOnChange:true
-
-START TRANSACTION;
 create table employeerishi (empId int);
 create table addressdetails (empId int);
 create tables emp (empId int);
-COMMIT;
+--rollback drop table employeerishi,addressdetails;
 
 
 
