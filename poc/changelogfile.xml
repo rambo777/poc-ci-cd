@@ -159,8 +159,6 @@
             columnName="phoneNumber"
             tableName="userdetails"/>
   </changeSet>
- 
-</changeSet>
   <changeSet id="create-Dept-Table" author="nvoxland">
         <createTable tableName="deptdetails">
             <column name="id" type="int"/>
