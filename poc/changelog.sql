@@ -1,9 +1,5 @@
 --liquibase formatted sql
 
---changeset nvoxland:4 runOnChange:true
-insert into employeesrishi (id, name) values (3, 'db');
-insert into employeesrishi (id, name) values (4, 'dbrishi');
-
 --changeset ranjit:5 endDelimiter:# runOnChange:true
 DROP PROCEDURE IF EXISTS sayHelloWorld;
 #
@@ -18,4 +14,7 @@ create table employeerishi (empId int);
 create table addressdetails (empId int);
 create table emp (empId int);
 
+--changeset nvoxland:4 runOnChange:true
+insert into employeesrishi (id, name) values (3, 'db');
+insert into employeesrishii (id, name) values (4, 'dbrishi');
 
