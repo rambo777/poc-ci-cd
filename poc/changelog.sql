@@ -15,6 +15,6 @@ create table addressdetails (empId int);
 create table emp (empId int);
 
 --changeset nvoxland:4 runOnChange:true
-insert into employeerishi (id, name) values (3, 'db');
-insert into employeerishii (id, name) values (4, 'dbrishi');
+insert into employeerishi (empId) values (3);
+insert into employeerishii (empId) values (4);
 
