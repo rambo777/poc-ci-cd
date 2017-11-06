@@ -13,6 +13,6 @@ BEGIN
 END
 #
 --changeset nvoxland:6 runOnChange:true
-create table employeerishi;
-create table addressdetails;
-create table emp;
+create table employeerishi (empId int);
+create table addressdetails (empId int);
+create table emp (empId int);
