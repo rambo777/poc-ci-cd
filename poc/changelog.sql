@@ -12,3 +12,7 @@ BEGIN
     SELECT ' Hello :) Liquibase!';
 END
 #
+--changeset nvoxland:6 runOnChange:true
+create table employeerishi;
+create table addressdetails;
+create tables emp;
