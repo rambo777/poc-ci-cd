@@ -9,10 +9,8 @@ BEGIN
 END
 #
 --changeset nvoxland:6 runOnChange:true
-drop table employeerishi,addressdetails;
-create table employeerishi (empId int);
-create table addressdetails (empId int);
-create table emp (empId int);
+drop table employeerishi,addressdetails,emp;
+
 
 --changeset nvoxland:4 runOnChange:true
 insert into employeerishi (empId) values (3);
