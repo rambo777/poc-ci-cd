@@ -16,4 +16,4 @@ END
 create table employeerishi (empId int);
 create table addressdetails (empId int);
 create table emp (empId int);
---rollback DROP table employeerishi, addressdetails;
+--rollback drop table employeerishi;
