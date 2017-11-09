@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS flywaydb (address VARCHAR(255));
